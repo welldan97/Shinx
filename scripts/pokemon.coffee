@@ -28,5 +28,5 @@ pockemonMe = (msg, query, cb) ->
         hrefs = window.$(".item > .pkg").map((i,e) -> window.$(e).attr('href'))
         pokemon = msg.random(hrefs).substring 29
         
-        cb "http://pokemondb.net/artwork/#{pokemon}"
+        cb "http://img.http://pokemondb.net/artwork/#{pokemon}.jpg"
 
