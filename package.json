@@ -19,7 +19,8 @@
     "hubot": "2.2.0",
     "hubot-scripts": ">=2.0.8",
     "optparse": ">= 1.0.3",
-    "node-expat": "1.6.1"
+    "node-expat": "1.6.1",
+    "wolfram": "0.2.3"
   },
 
   "engines": {
