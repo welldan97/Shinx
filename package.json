@@ -21,7 +21,8 @@
     "optparse": ">= 1.0.3",
     "node-expat": "1.6.1",
     "wolfram": "0.2.3",
-    "jsdom": "0.2.14"
+    "jsdom": "0.2.14",
+    "underscore.string": "2.3.0"
   },
 
   "engines": {

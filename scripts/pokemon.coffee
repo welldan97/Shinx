@@ -3,17 +3,19 @@
 #
 # Dependencies:
 #   "jsdom": "0.2.14"
+#   "underscore.string": "2.3.0"
 #
 # Configuration:
 #   None
 #
 # Commands:
-#   hubot pokemon
+#   hubot pokemon - Sends random pokemon
 #
 # Author:
 #   welldan97
 
 jsdom = require 'jsdom'
+_  = require 'underscore.string'
 
 module.exports = (robot) ->
   robot.respond /pokemon( me)? (.*)/i, (msg) ->
@@ -28,5 +30,5 @@ pockemonMe = (msg, query, cb) ->
         hrefs = window.$(".item > .pkg").map((i,e) -> window.$(e).attr('href'))
         pokemon = msg.random(hrefs).substring 29
         
-        cb "http://img.http://pokemondb.net/artwork/#{pokemon}.jpg"
+        cb "#{_.capitalize(pokemon)}\nhttp://img.pokemondb.net/artwork/#{pokemon}.jpg"
 
