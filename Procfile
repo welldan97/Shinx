@@ -1,1 +1,1 @@
-web: bin/hubot -a gtalk -n Shinx
+app: bin/hubot -a gtalk -n Shinx
