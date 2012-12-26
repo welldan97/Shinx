@@ -9,7 +9,7 @@
 #   None
 #
 # Commands:
-#   hubot pokemon - Sends random pokemon
+#   hubot pokemon me - Sends random pokemon
 #
 # Author:
 #   welldan97
