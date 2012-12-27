@@ -22,7 +22,10 @@
     "node-expat": "1.6.1",
     "wolfram": "0.2.3",
     "jsdom": "0.2.14",
-    "underscore.string": "2.3.0"
+    "underscore.string": "2.3.0",
+    "wwwdude": "0.1.0",
+    "clark": "0.0.5",
+    "xml2js": "0.1.14"
   },
 
   "engines": {
