@@ -27,8 +27,8 @@ pockemonMe = (msg, query, cb) ->
     .get() (err, res, body) ->
       jquery = 'http://code.jquery.com/jquery.js'
       jsdom.env body, [jquery], (errors, window) ->
-        hrefs = window.$(".item > .pkg").map((i,e) -> window.$(e).attr('href'))
-        pokemon = msg.random(hrefs).substring 29
-        
-        cb "#{_.capitalize(pokemon)}\nhttp://img.pokemondb.net/artwork/#{pokemon}.jpg"
+        hrefs = window.$(".infocard-tall > .pkg").map((i,e) -> window.$(e).attr('href'))
+        pokemon = msg.random(hrefs).substring 9
 
+        cb "#{_.capitalize(pokemon)}"
+        cb "http://img.pokemondb.net/artwork/#{pokemon}.jpg"
